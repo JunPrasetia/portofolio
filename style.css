@@ -39,6 +39,10 @@ section::before{
     font-size: 48px;
 }
 
+.home {
+    width: 100%;
+}
+
 .home .arrow img{
     width: 60px;
 }

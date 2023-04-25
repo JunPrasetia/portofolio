@@ -18,16 +18,16 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  <a class="nav-link active" aria-current="page" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
+                  <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="#">Work</a>
+                  <a class="nav-link" href="#work">Work</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
+                  <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -45,10 +45,10 @@
                 <img src="images/potrait.png" alt="potrait">
             </div>
         </div>
-        <div class="arrow w-100 d-flex align-items-center flex-column">
-          <a class="text-decoration-none text-dark" href="#about">More Info</a>
+        <a href="#about" class="text-decoration-none arrow w-100 d-flex align-items-center flex-column">
+          <div class="text-dark">More Info</div>
           <img id="arrow" class="mt2" src="images/arrow.svg" alt="arrow icon">
-        </div>
+        </a>
       </section>
       <section id="about" class="about container">
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic voluptatem architecto laborum et perferendis fuga veritatis asperiores earum. Excepturi vero veniam ipsam incidunt praesentium, aliquid sint rerum commodi officiis quia.</p>
@@ -105,36 +105,36 @@
       </section>
       <section id="contact" class="contact container">
         <div class="row d-flex align-items-center gap-5">
-          <div class="col">
+          <div class="col-12 col-lg-6">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis deleniti excepturi esse illum ad libero quasi omnis iure quia, vitae officia modi non reprehenderit sit exercitationem iste dolores aliquid. Quaerat.</p>
               <div class="row">
-              <div class="col">
-                  <img src="images/Facebook.svg" alt="Facebook icon">
-                  <p>J Prasetya</p>
+              <div class="col d-flex align-items-center">
+                  <img class="w-25" src="images/Facebook.svg" alt="Facebook icon">
+                  <p class="mb-0 ms-2">J Prasetya</p>
               <div>
-              <div class="col">
-                  <img src="images/Instagram.svg" alt="Instagram icon">
-                  <p>@jpraasetya</p>
+              <div class="col d-flex align-items-center">
+                  <img class="w-25" src="images/Instagram.svg" alt="Instagram icon">
+                  <p class="mb-0 ms-2">@jpraasetya</p>
               </div>
-              <div class="col">
-                  <img src="images/Twitter.svg" alt="Twitter icon">
-                  <p>jpraasetya</p>
+              <div class="col d-flex align-items-center">
+                  <img class="w-25" src="images/Twitter.svg" alt="Twitter icon">
+                  <p class="mb-0 ms-2">jpraasetya</p>
               </div>
             </div>
           </div>
-          <div class="col">
-            <form class="contact-form">
+          <div class="col-12 col-lg-5">
+            <form class="contact-form" onsubmit="onFormSubmit(event)">
               <div class="mb-3">
                 <label for="inp_email" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="inp_email" placeholder="example@email.com">
+                <input type="email" class="form-control" id="inp_email" placeholder="example@email.com" required>
               </div>
               <div class="mb-3">
                 <label for="inp_subject" class="form-label">Subject</label>
-                <input type="text" class="form-control" id="inp_subject" placeholder="Your Subject">
+                <input type="text" class="form-control" id="inp_subject" placeholder="Your Subject" required>
               </div>
               <div class="mb-3">
                 <label for="inp_message" class="form-label">Message</label>
-                <input type="text" class="form-control" id="inp_message" placeholder="Your Message">
+                <input type="text" class="form-control" id="inp_message" placeholder="Your Message" required>
               </div>
               <div class="d-flex justify-content-center mt-5">
                 <button type="submit" class="btn button">Submit</button>
